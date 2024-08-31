@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <title>Formularz</title>
+    </head>
+<style>
+label {
+    display: inline-block;
+    width: 90px;
+    }
+form {
+  width: 350px;
+  padding: 7px;
+  border: 1px solid #CCC;
+  border-radius: 7px;
+}
+
+.centering{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+    /* Margins */
+
+.margin-top{
+    margin-top: 4px;
+}
+
+.margin-down{
+    margin-bottom:  4px;
+}
+    /* COLORS */
+
+.color {
+    background:rgb(229, 230, 255);
+}
+
+    /* FONT Settings */
+.font-style {
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+}
+
+</style>
+<body class="centering">
+    <form action="dalej.php" method="post" class="color">
+        <fieldset>
+            <legend> <b>Dane Gracza !</b></legend>
+            <ul>
+                    <li> 
+                        <legend class="margin-down font-style margin-top">Dane osobowe</legend>
+                    </li>
+                        <label for="username">Imię:</label>
+                            <input type="text" name="imie" id="username" placeholder="Wpisz Imię">
+                        <label for="lastname">Nazwisko:</label>
+                            <input type="text" name="nazwisko" id="lastname" placeholder="Wpisz Nazwisko"required class="margin-top"> 
+                    <li>
+                        <legend class="margin-down font-style margin-top">Dane kontaktowe</legend>
+                    </li>
+					    <label for="numer">Numer Gracza:</label>
+                            <input type="number" name="numer" id="pnmbr" placeholder="Wpisz Numer">
+                        <label for="email">Numer Drużyny:</label>
+                            <input type="number" name="druzyna_id" id="eml" placeholder="Wpisz Nr. Drużyny" class="margin-top"> 
+					
+						         
+                <input type="submit" class="margin-top"></input>
+            </ul>
+        </fieldset>
+    </form>           
+</body>
+
+</html>
